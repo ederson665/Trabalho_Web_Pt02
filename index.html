@@ -8,55 +8,83 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container">
-        <a class="navbar-brand" href="#">Stacio Sports</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Mais
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-          </form>
+         <a class="navbar-brand" href="#">Stacio Sports</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item"><a class="nav-link active" href="#">Últimas Notícias</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">Times</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">Jogos</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">Classificações</a></li>
+            </ul>
+            <form class="d-flex">
+               <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+               <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+            </form>
+         </div>
+      </div>
+   </nav>
+     
+
+   <div class="container my-5">
+    <div class="row">
+      <!-- Primeira notícia -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="https://media.gettyimages.com/id/2149579655/pt/foto/sao-paulo-brazil-gabriel-menino-of-palmeiras-and-gerson-of-flamengo-fight-for-the-ball-during.jpg?s=612x612&w=0&k=20&c=QnELe-ZcFE1GRqZ08LvONdGRiu3oU8I9U1KZpjbG04A= " class="card-img-top" alt="Flamengo vs Palmeiras">
+          <div class="card-body">
+            <h5 class="card-title">Superclássico define os rumos do campeonato: Flamengo e Palmeiras se enfrentam em jogo decisivo</h5>
+            <p class="card-text">Com apenas três rodadas restantes, os gigantes do futebol brasileiro disputam liderança em duelo que pode decidir o campeão.</p>
+            <!-- Link para a página noticia1.html -->
+            <a href="noticia1.html" class="btn btn-primary">Leia mais</a>
+          </div>
         </div>
       </div>
-    </nav>
-
-    <div class="container my-5">
-      <h1>To apanhando paizão</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-5">Dá um jeito nesse trampo Jarsin. It includes <a href="https://getbootstrap.com/">Bootstrap 5</a> via the <a href="https://www.jsdelivr.com/package/npm/bootstrap">jsDelivr CDN</a> and includes an additional CSS and JS file for your own code.</p>
-        <p>Feel free to download or copy-and-paste any parts of this example.</p>
-
-        <hr class="col-1 my-4">
-
-        <a href="https://getbootstrap.com" class="btn btn-primary">Read the Bootstrap docs</a>
-        <a href="https://github.com/twbs/examples" class="btn btn-secondary">View on GitHub</a>
+  
+      <!-- Segunda notícia -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="https://media.gettyimages.com/id/1247513401/pt/foto/topshot-paris-saint-germains-argentine-forward-lionel-messi-is-congratulated-by-paris-saint.jpg?s=612x612&w=0&k=20&c=LpAx3GsuCoevn2-DwxSWRh-kFjUFptdplNBN2bWhMuI=" class="card-img-top" alt="Neymar brilha no PSG">
+          <div class="card-body">
+            <h5 class="card-title">Neymar brilha e PSG vence clássico contra o Olympique de Marseille</h5>
+            <p class="card-text">Em noite inspirada, Neymar marca dois gols e lidera vitória do PSG por 3 a 1 no Parc des Princes.</p>
+            <!-- Link para a página noticia2.html -->
+            <a href="noticia2.html" class="btn btn-primary">Leia mais</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Terceira notícia -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="https://media.gettyimages.com/id/2164950291/pt/foto/paris-france-players-of-team-brazil-celebrate-after-scoring-during-the-mens-preliminary-round.jpg?s=612x612&w=0&k=20&c=sAlkAE-ds1QAOBKWQ90EnFoBWfb818rwxlXCjYNTZlQ=" class="card-img-top" alt="Seleção Brasileira de Vôlei">
+          <div class="card-body">
+            <h5 class="card-title">Seleção Brasileira de Vôlei conquista ouro no Campeonato Mundial</h5>
+            <p class="card-text">Brasil vence a Itália por 3 sets a 1 e garante o título mundial pela quinta vez.</p>
+            <!-- Link para a página noticia3.html -->
+            <a href="noticia3.html" class="btn btn-primary">Leia mais</a>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  
+
+ <footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+     <p>&copy; 2024 Stacio Sports. Todos os direitos reservados.</p>
+     <ul class="list-inline">
+        <li class="list-inline-item"><a href="#" class="text-white">Facebook</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Twitter</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Instagram</a></li>
+     </ul>
+  </div>
+</footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="main.js"></script>
